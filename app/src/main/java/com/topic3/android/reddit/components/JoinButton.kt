@@ -57,11 +57,6 @@ fun JoinButton(onClick: (Boolean) -> Unit = {}) {
         }
     }
 
-    val buttonBackgroundColor: Color by animateColorAsState(
-        if (buttonState == JoinButtonState.PRESSED)
-            Color.White else
-            Color.Blue
-    )
 
     val buttonWidth: Dp
             by transition.animateDp(
